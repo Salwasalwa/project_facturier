@@ -1,0 +1,16 @@
+{% extends "base.html"%}
+{%block title%}
+Customers list
+{%endblock title%}
+{%block content%}
+<h2>Customers list</h2>
+{% for client in clients %}
+<div class="col-md-1">
+    <h3><a href="{% url 'client-detail' client.slug %}">{{client.name}}</a></h3>
+
+</div>
+{% endfor %}
+<div class="col-md-12">
+<a href="{% url 'create-client' %}">New client</a>
+</div>
+{% endblock content %}

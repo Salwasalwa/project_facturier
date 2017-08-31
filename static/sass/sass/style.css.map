@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../../home/salwa/Code/django/facturier-env/project_facturier/facturier/static/sass/style.css",
+	"sources": [
+		"../../home/salwa/Code/django/facturier-env/project_facturier/facturier/static/sass/style.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,OAAO,GAoB5B;EArBD,AAEI,IAFA,CAEA,KAAK,CAAC;IACF,MAAM,EAAE,eAAe;IACvB,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,QAAQ,GAKnB;IAVL,AAMQ,IANJ,CAEA,KAAK,CAID,EAAE,EANV,AAMY,IANR,CAEA,KAAK,CAIG,EAAE,CAAC;MACH,MAAM,EAAE,eAAe;MACvB,UAAU,EAAE,MAAM,GACrB;EATT,AAWI,IAXA,CAWA,OAAO,CAAC;IACJ,UAAU,EAAE,MAAM;IAClB,OAAO,EAAE,IAAI;IACb,KAAK,EAAE,GAAG;IACV,MAAM,EAAG,IAAI,GAIhB;IAnBL,AAgBQ,IAhBJ,CAWA,OAAO,CAKH,MAAM,EAhBd,AAgBgB,IAhBZ,CAWA,OAAO,CAKK,CAAC,CAAA;MACL,MAAM,EAAE,GAAG,GACd"
+}

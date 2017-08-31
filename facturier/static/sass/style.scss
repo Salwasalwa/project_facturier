@@ -1,0 +1,22 @@
+body {
+    background-color: #bbb8b8;
+    table {
+        border: 1px solid black;
+        width: 80%;
+        margin: 1em auto;
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+        }
+    }
+    .to_win {
+        text-align: center;
+        display: flex;
+        width: 80%;
+        margin:  auto;
+        button, a{
+            margin: 1em;
+        }
+    }
+
+}

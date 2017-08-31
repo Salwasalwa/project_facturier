@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+{%block title%}
+detail Customer
+{%endblock title%}
+{%block content%}
+<h2>detail Customer</h2>
+<div class="col-md-6">
+    <ul>
+        <li>{{client.name}}</li>
+        <li>{{client.prenom}}</li>
+        <li>{{client.adress}}</li>
+        <li>{{client.zipcode}}</li>
+        <li>{{client.city}}</li>
+        <li>{{client.email_contact}}</li>
+    </ul>
+    <a href="{% url 'client-edit' client.slug %}">Edit Client</a>
+</div>
+<div class="col-md-12">
+{% endblock content %}

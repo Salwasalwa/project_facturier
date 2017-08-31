@@ -1,0 +1,29 @@
+{% extends "base.html"%}
+{%block title%}
+detail Devis
+{%endblock title%}
+{%block content%}
+<div class="col-md-12">
+
+    <h2>Proposal: {{devis.title}}</h2>
+    <p>Compte: {{devis.compte}}</p>
+    <p>Client: {{devis.client}}</p>
+    <p>Status: {{devis.status}}</p>
+
+</div>
+<div class="col-md-12 to_win">
+    <a class="btn btn-primary" href="{% url 'devis-edit' devis.slug %}">Edit devis</a>
+
+    <!-- <form id="the_form" action="{% url 'status-edit' devis.slug %}" method="post" class="form">
+        <input type="hidden" name="devis" value="{{ devis.id }}">
+        <button class="btn btn-primary" href="#" value="refuse">Refuse</button>
+    </form> -->
+
+    <form id="the_form" action="{% url 'create-facture' %}" method="get" class="form">
+        <input type="hidden" name="devis_id" value="{{ devis.id }}">
+        <button class="btn btn-primary" type="submit">To Win</button>
+    </form>
+
+
+</div>
+{% endblock content %}

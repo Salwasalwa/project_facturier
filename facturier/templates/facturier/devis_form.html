@@ -1,0 +1,35 @@
+{% extends "base.html"%}
+{% load bootstrap3 %}
+{%block title%}
+Add Devis
+{%endblock title%}
+
+{%block content%}
+<h2>create new proposal</h2>
+
+<form id="the_form" action="{% url 'create-devis' %}" method="post" class="form">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+
+    {{devis_formset.management_form}}
+    {% for inline_form in devis_formset %}
+        <div class="plop">
+        {% bootstrap_form inline_form %}
+        </div>
+        <hr />
+    {% endfor %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">Create</button>
+    {% endbuttons %}
+</form>
+
+{% endblock content %}
+{% block extra_scripts%}
+<script type="text/javascript">
+    $(function() {
+        $('#the_form .plop').formset({
+            prefix: '{{ team_formset.prefix }}'
+        });
+    })
+</script>
+{% endblock extra_scripts%}

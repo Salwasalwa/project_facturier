@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+{% load bootstrap3 %}
+{%block title%}
+Edit Customer
+{%endblock title%}
+
+{%block content%}
+<h2>Edit Customer</h2>
+
+<form id="the_form" action="{% url 'client-edit' client.slug %}" method="post" class="form">
+    {% csrf_token %}
+
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">Update</button>
+    {% endbuttons %}
+</form>
+
+{% endblock content %}

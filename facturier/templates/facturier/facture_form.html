@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+{% load bootstrap3 %}
+{%block title%}
+New Facture
+{%endblock title%}
+
+{%block content%}
+<h2>New Facture</h2>
+
+<form id="the_form" action="{% url 'create-facture' %}" method="post" class="form">
+    {% csrf_token %}
+
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">Validate</button>
+    {% endbuttons %}
+</form>
+
+{% endblock content %}

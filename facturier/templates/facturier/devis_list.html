@@ -1,0 +1,24 @@
+{% extends "base.html"%}
+{%block title%}
+Customers list
+{%endblock title%}
+{%block content%}
+<h2>Proposal list</h2>
+<div class="col-md-8 center">
+    <table>
+        {% for devis in deviss %}
+        <tr>
+            <td><h3>{{devis.title}}</h3></td>
+            <td><a href="{% url 'devis-detail' devis.slug %}" class="btn btn-primary">Detail</a></h3></td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</div>
+
+<div class="col-md-12">
+<a href="{% url 'create-devis' %}" class="btn btn-primary">Create Devis</a>
+</div>
+{% endblock content %}
